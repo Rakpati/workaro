@@ -1,1 +1,1 @@
-web: java -cp target/classes/
+java $JAVA_OPTS -jar target/WorKaro-0.0.1-SNAPSHOT.jar --server.port=$PORT $JAR_OPTS
