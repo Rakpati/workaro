@@ -155,7 +155,7 @@ public class WorkaroController {
 
 		try {
 
-			var corporateList = (List<CorporateZone>) corporateZoneRepository.findAll();
+			List<CorporateZone> corporateList = corporateZoneRepository.findAll();
 
 			List<ResumeInfo> resumeList = resumeInfoRepository.findAllResume();
 
