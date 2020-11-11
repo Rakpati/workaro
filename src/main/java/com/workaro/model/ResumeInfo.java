@@ -2,6 +2,8 @@ package com.workaro.model;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.Type;
+
 @Entity
 @Table(name="ResumeInfo")
 public class ResumeInfo {
@@ -33,6 +35,7 @@ public class ResumeInfo {
 	private String fileType;
 
 	@Lob
+	@Type(type = "org.hibernate.type.BinaryType")
 	@Column(name="resume")
 	private byte[] resume;
 
